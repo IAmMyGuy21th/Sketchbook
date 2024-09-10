@@ -55,12 +55,12 @@ export let WaterShader = {
     const float EPSILON	= 1e-3;
   
     // sea variables
-    const int ITER_GEOMETRY = 3;
-    const int ITER_FRAGMENT = 5;
+    const int ITER_GEOMETRY = 2;
+    const int ITER_FRAGMENT = 2;
     const float SEA_HEIGHT = 20;
-    const float SEA_CHOPPY = 1.0;
-    const float SEA_SPEED = 1.0;
-    const float SEA_FREQ = 0.16;
+    const float SEA_CHOPPY = 20.0;
+    const float SEA_SPEED = 20.0;
+    const float SEA_FREQ = 20;
     const vec3 SEA_BASE = vec3(0.1,0.19,0.22);
     const vec3 SEA_WATER_COLOR = vec3(0.8,0.9,0.6);
     mat2 octave_m = mat2(1.6,1.2,-1.2,1.6);
