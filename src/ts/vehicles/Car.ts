@@ -123,7 +123,7 @@ export class Car extends Vehicle implements IControllable
 			}
 			else
 			{
-				const powerFactor = (gearsMaxSpeeds[this.gear] - this.speed) / (gearsMaxSpeeds[this.gear] - gearsMaxSpeeds[this.gear - 1]);
+				const powerFactor = 5 * (gearsMaxSpeeds[this.gear] - this.speed) / (gearsMaxSpeeds[this.gear] - gearsMaxSpeeds[this.gear - 1]);
 
 				if (powerFactor < 0.1 && this.gear < maxGears) this.shiftUp();
 				else if (this.gear > 1 && powerFactor > 1.2) this.shiftDown();
