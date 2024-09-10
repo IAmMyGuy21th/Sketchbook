@@ -94,16 +94,16 @@ export class Car extends Vehicle implements IControllable
 		}
 
 		// Engine
-		const engineForce = 500;
+		const engineForce = 2500;
 		const maxGears = 5;
 		const gearsMaxSpeeds = {
-			'R': -4,
+			'R': -20,
 			'0': 0,
-			'1': 5,
-			'2': 9,
-			'3': 13,
-			'4': 17,
-			'5': 22,
+			'1': 25,
+			'2': 45,
+			'3': 65,
+			'4': 85,
+			'5': 110,
 		};
 
 		if (this.shiftTimer > 0)
