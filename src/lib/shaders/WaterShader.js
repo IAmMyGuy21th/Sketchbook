@@ -57,7 +57,7 @@ export let WaterShader = {
     // sea variables
     const int ITER_GEOMETRY = 3;
     const int ITER_FRAGMENT = 5;
-    const float SEA_HEIGHT = 0.6;
+    const float SEA_HEIGHT = 20;
     const float SEA_CHOPPY = 1.0;
     const float SEA_SPEED = 1.0;
     const float SEA_FREQ = 0.16;
